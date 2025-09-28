@@ -1,0 +1,151 @@
+/* Task 0: Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar div {
+    color:#fff
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Task 1: Card Row */
+.card-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hover effect for the card */
+}
+
+/* Task 2: Page Layout with Grid Areas */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main-content"
+        "footer footer";
+    gap: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Task 3: Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Task 4: Portfolio Page */
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+.portfolio-header .logo {
+    color: white;
+    font-size: 24px;
+}
+
+.portfolio-header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.portfolio-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    width: 30%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
